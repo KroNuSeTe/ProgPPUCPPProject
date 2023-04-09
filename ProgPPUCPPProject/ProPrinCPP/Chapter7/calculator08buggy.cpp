@@ -142,6 +142,15 @@ bool is_declared(string s)
 	return false;
 }
 
+bool is_constantVar(string s)
+{
+	for (int i = 0; i < names.size(); ++i)
+		if (names[i].name == s) {
+			return names[i].constant;
+		}
+	return false;
+}
+
 int search_variable(string s) {
 	for (int i = 0; i < names.size(); ++i)
 		if (names[i].name == s) return i;
@@ -245,11 +254,14 @@ double declaration()
 	if (c.kind == 'c') {
 		isConstVariable = true;
 	}
+	else {
+		ts.unget(c);
+	}
 	Token t = ts.get();
 	if (t.kind != 'a') error("name expected in declaration");
 	string name = t.name;
-	if (isConstVariable) error(name, "cant change a const variable");
 	if (is_declared(name)) cout << name << " declared twice\n";
+	if (is_declared(name) && is_constantVar(name)) error(name, " cant change a const variable");
 	Token t2 = ts.get();
 	if (t2.kind != '=') error("= missing in declaration of ", name);
 	double d = expression();
