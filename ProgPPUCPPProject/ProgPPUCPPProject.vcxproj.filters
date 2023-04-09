@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ProPrinCPP\YenKroPouToDollarsSwitch.cpp">
+    <ClCompile Include="ProPrinCPP\Chapter4\YenKroPouToDollarsSwitch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ProPrinCPP\Chapter7\calculator08buggy.cpp">

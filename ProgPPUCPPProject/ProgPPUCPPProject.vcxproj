@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ProPrinCPP\Chapter7\calculator08buggy.cpp" />
-    <ClCompile Include="ProPrinCPP\YenKroPouToDollarsSwitch.cpp">
+    <ClCompile Include="ProPrinCPP\Chapter4\YenKroPouToDollarsSwitch.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
   </ItemGroup>
