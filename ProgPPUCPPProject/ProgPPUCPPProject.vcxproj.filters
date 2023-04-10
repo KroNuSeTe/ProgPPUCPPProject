@@ -27,5 +27,11 @@
     <ClCompile Include="ProPrinCPP\Chapter7\Ch7Exer5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ProPrinCPP\Chapter7\Ch7Exer6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProPrinCPP\Chapter7\Ch7Exer7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

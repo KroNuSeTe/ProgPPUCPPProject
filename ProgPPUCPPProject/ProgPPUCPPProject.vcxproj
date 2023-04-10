@@ -136,7 +136,13 @@
     <ClCompile Include="ProPrinCPP\Chapter7\Ch7Exer4.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="ProPrinCPP\Chapter7\Ch7Exer5.cpp" />
+    <ClCompile Include="ProPrinCPP\Chapter7\Ch7Exer5.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ProPrinCPP\Chapter7\Ch7Exer6.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ProPrinCPP\Chapter7\Ch7Exer7.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
