@@ -33,6 +33,7 @@ public:
 const char let = 'L';		   // To create variables, ex: x=12;
 const char quit = 'q';		   // Quit token
 const char print = ';';		   // Print token
+const char printendl = '\n';   // Print token endl
 const char number = '8';	   // Number token
 const char const_token = 'c';  // Const token, ex: const x=13.4;
 const char name = 'a';	       // Name token
@@ -42,9 +43,14 @@ const char power_token = 'p';  // Power token
 Token Token_stream::get()
 {
 	if (full) { full = false; return buffer; }
-	char ch;
-	cin >> ch;	// Reads a character, to compare
-	switch (ch) {
+	char ch = ' ';
+	
+
+	while (isspace(ch) && ch != '\n') {
+		ch = cin.get();	// Ignore spaces and allow endl '\n'
+	}
+
+	switch(ch){
 	case '(':
 	case ')':
 	case '+':
@@ -55,7 +61,6 @@ Token Token_stream::get()
 	case ';':
 	case '=':
 	case ',':
-	case '\n':
 		return Token(ch); // Returns a character token.
 	case '.':
 	case '0':
@@ -75,6 +80,8 @@ Token Token_stream::get()
 	}
 	case '#':
 		return Token(let);  // isalpha dont recognice it as an alphabetic character
+	case '\n':
+		return Token(printendl);
 	default:
 		if (isalpha(ch)) {  // isalpha is a <cctype> function that Checks that a character is an alphabetic letter
 			string s;
@@ -337,7 +344,7 @@ void calculate()
 	while (true) try {
 		cout << prompt;
 		Token t = ts.get();
-		while (t.kind == print) t = ts.get();
+		while (t.kind == print || t.kind == printendl) t = ts.get();
 		if (t.kind == quit) return;
 		ts.unget(t);
 		cout << result << statement() << endl;
