@@ -33,5 +33,8 @@
     <ClCompile Include="ProPrinCPP\Chapter7\Ch7Exer8.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ProPrinCPP\Chapter10\Ch10Drill.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
