@@ -30,7 +30,7 @@
     <ClCompile Include="ProPrinCPP\Chapter7\Ch7Exer6.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ProPrinCPP\Chapter7\Ch7Exer7.cpp">
+    <ClCompile Include="ProPrinCPP\Chapter7\Ch7Exer8.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
