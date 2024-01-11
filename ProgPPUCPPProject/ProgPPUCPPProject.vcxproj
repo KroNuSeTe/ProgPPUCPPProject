@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ProPrinCPP\Chapter10\Ch10Drill.cpp" />
+    <ClCompile Include="ProPrinCPP\Chapter10\Ch10Exer1.cpp" />
     <ClCompile Include="ProPrinCPP\Chapter7\calculator08buggy.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
