@@ -19,7 +19,7 @@ int main()
 {
 	srand(time(NULL));
 	ofstream ost{ filename };
-	if (!ost) error("Can't open input file ", filename);
+	if (!ost) error("Can't open output file ", filename);
 
 	// 50 Random Temperature in range -20 / 50
 	for (int i = 0; i < 50; i++)
