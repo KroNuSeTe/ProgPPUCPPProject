@@ -1,10 +1,8 @@
 // Copyright by Javier Dueñas
 
-/*********************************************************************
-	Exercice 1 Chapter 10
-	Write a program that produces the sum of all the numbers in a file
-	of witespace-separated integers.
-*********************************************************************/
+//	Exercice 1 Chapter 10
+//	Write a program that produces the sum of all the numbers in a file
+//	of witespace-separated integers.
 
 #include "../std_lib_facilities.h"
 
