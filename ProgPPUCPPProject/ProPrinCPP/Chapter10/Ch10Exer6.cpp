@@ -81,7 +81,8 @@ istream& operator>>(istream& is, Roman_int& r)
 		else
 		{
 			is.putback(romanChar);
-			break;
+			is.clear(ios::failbit);
+			return is;
 		}
 	}
 
@@ -101,8 +102,19 @@ ostream& operator<<(ostream& os, Roman_int& r)
 
 int main()
 {
-	Roman_int r;
-	cout << "Insert an Roman Number(I-MMMCMXCIX): ";
-	cin >> r;
-	cout << "Roman " << r << " equals " << r.as_int() << '\n';
+	try {
+		Roman_int r;
+		cout << "Insert an Roman Number(I-MMMCMXCIX): ";
+		cin >> r;
+		cout << "Roman " << r << " equals " << r.as_int() << '\n';
+	}
+	catch (runtime_error e) {
+		cout << e.what() << endl;
+		keep_window_open();
+	}
+	catch (...) {
+		cout << "Exiting" << endl;
+		keep_window_open();
+	}
 }
+
