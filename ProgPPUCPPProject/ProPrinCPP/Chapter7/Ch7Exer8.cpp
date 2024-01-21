@@ -1,4 +1,3 @@
-
 /*
 Revised by Javier Dueñas April 2023
 Originally written by Bjarne Stroustrup
@@ -128,10 +127,11 @@ Token Token_stream::get()
 	case '7':
 	case '8':
 	case '9':
-	{	cin.unget();			// Returns the character to the buffer.
-	double val;
-	cin >> val;					// And reads all the number.
-	return Token(number, val);  // Returns a numeric token
+	{	
+		cin.unget();			// Returns the character to the buffer.
+		double val;
+		cin >> val;					// And reads all the number.
+		return Token(number, val);  // Returns a numeric token
 	}
 	case '#':
 		return Token(let);  // isalpha dont recognice it as an alphabetic character

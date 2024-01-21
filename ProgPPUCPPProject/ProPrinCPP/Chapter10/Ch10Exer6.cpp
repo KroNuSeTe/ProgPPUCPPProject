@@ -1,3 +1,4 @@
+#include "Ch10Exer6.h"
 // Copyright by Javier Dueñas & Bjarne Stroustrup
 
 // Chapter 10 Exercise 6.
@@ -47,20 +48,22 @@ bool isARomanCharacter(char rnum)
 
 int romanToInt(string& romanString)
 {
+	// romanString to Uppercase
+	transform(romanString.begin(), romanString.end(), romanString.begin(), ::toupper);
 	// convert the string romanChars to a vector romanChars
 	vector<char> romanChars(romanString.begin(), romanString.end());
 	int result = 0;
 	int len = romanChars.size();
-	result = intToRomanVal.at(toupper(romanChars.at(len - 1)));
-	for (int i = romanChars.size() - 2; i >= 0; i--)
+	result = intToRomanVal.at(romanChars.at(len - 1));
+	for (int i = len - 2; i >= 0; i--)
 	{
-		if (intToRomanVal.at(toupper(romanChars.at(i))) >= intToRomanVal.at(toupper(romanChars.at(i + 1))))
+		if (intToRomanVal.at(romanChars.at(i)) >= intToRomanVal.at(romanChars.at(i + 1)))
 		{
-			result += intToRomanVal.at(toupper(romanChars.at(i)));
+			result += intToRomanVal.at(romanChars.at(i));
 		}
 		else
 		{
-			result -= intToRomanVal.at(toupper(romanChars.at(i)));
+			result -= intToRomanVal.at(romanChars.at(i));
 		}
 	}
 	return result;
@@ -82,11 +85,9 @@ istream& operator>>(istream& is, Roman_int& r)
 		{
 			is.putback(romanChar);
 			is.clear(ios::failbit);
-			return is;
 		}
 	}
 
-	
 	int romanInt = romanToInt(charstring);
 	r.set_romanInt(romanInt);
 	r.set_romanString(charstring);

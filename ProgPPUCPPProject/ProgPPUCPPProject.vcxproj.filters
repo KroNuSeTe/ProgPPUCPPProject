@@ -18,28 +18,8 @@
     <ClCompile Include="ProPrinCPP\Chapter4\YenKroPouToDollarsSwitch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ProPrinCPP\Chapter7\calculator08buggy.cpp">
+    <ClCompile Include="ProPrinCPP\Chapter10\ch10Exer7.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ProPrinCPP\Chapter7\Ch7Exer4.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ProPrinCPP\Chapter7\Ch7Exer5.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ProPrinCPP\Chapter7\Ch7Exer6.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ProPrinCPP\Chapter7\Ch7Exer8.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ProPrinCPP\Chapter10\Ch10Exer6.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="ProPrinCPP\Chapter10\Ch10Exer6.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
