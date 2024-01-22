@@ -18,7 +18,7 @@
     <ClCompile Include="ProPrinCPP\Chapter4\YenKroPouToDollarsSwitch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ProPrinCPP\Chapter10\Ch10Exer8.cpp">
+    <ClCompile Include="ProPrinCPP\Chapter10\Ch10Exer9.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
