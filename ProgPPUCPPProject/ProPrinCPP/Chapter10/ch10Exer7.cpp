@@ -1,5 +1,4 @@
-
-// Revised by Javier Dueñas April 2023
+// Copyright by Javier Dueñas
 
 // Chapter 10 - Exercise 7
 // Make a version of the calculator from Chapter 7 that accepts Roman

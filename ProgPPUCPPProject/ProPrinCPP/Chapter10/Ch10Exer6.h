@@ -1,5 +1,5 @@
 #pragma once
-// Copyright by Javier Dueñas & Bjarne Stroustrup
+// Copyright by Javier Dueñas
 
 // Chapter 10 Exercise 6.
 
